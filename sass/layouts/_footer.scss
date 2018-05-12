@@ -6,9 +6,18 @@
   letter-spacing: 1.1px;
   color: $color-grey-light-1;
 
+  @include respond(tab-port) {
+    padding: 8rem 0;
+  }
+
+
   &__logo-box {
     text-align: center;
     margin-bottom: 6rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 1rem;
+    }
 
   }
 
@@ -30,8 +39,17 @@
 
   &__navigation {
     border-top: 1px solid $color-grey-dark;
-    padding-top: 3rem;
+    padding-top: 2rem;
     display: inline-block;
+    width: 95%;
+    margin-left: 2rem;
+
+    @include respond(tab-port) {
+      padding-top: 2rem;
+      width: 100%;
+      text-align: center;
+      margin-left: 0;
+    }
 
   }
 
@@ -69,14 +87,23 @@
   }
 
   &__copyright {
-
-    margin-left: 1rem;
-
+    border-top: 1px solid $color-grey-dark;
+    padding-top: 2rem;
+    margin-right: 2rem;
+    width: 95%;
+    float: right;
 
     &:not(:last-child) {
-      border-top: 1px solid $color-grey-dark;
-      padding-top: 3rem;
+      margin-bottom: 2rem;
     }
+
+
+    @include respond(tab-port) {
+      width: 100%;
+      margin-right: 0;
+
+    }
+
 
   }
 }
