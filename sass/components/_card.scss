@@ -6,6 +6,7 @@
   height: 52rem;
 
   &__side {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border-radius: .3rem;
     box-shadow: 0rem 1.5rem 4rem $color-shadow-down;
@@ -145,7 +146,9 @@
 
 //////////////////////////////////////////////////////////////////
 
-  @include respond(tab-port) {
+  // @include respond(tab-port) {
+  @media only screen and (max-width: 56.25em),
+         only screen and (hover: none) {
     height: auto;
     background-color: $color-white;
     box-shadow: 0rem 1.5rem 3rem $color-shadow-up;
