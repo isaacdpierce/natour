@@ -47,7 +47,7 @@
     }
 
     @include respond(tab-port) {
-      padding-top: 2rem;
+      padding-top: 2.1rem;
       width: 100%;
       text-align: center;
       margin-left: 0;
@@ -63,7 +63,7 @@
     display: inline;
 
     &:not(:last-child) {
-      margin-right: 1.5rem;
+      margin-right: 1.4rem;
     }
   }
 
